@@ -1,0 +1,178 @@
+body{
+    font-family: Helvetica, sans-serif
+}
+
+/* Navigation Bar */
+
+/* Contents */
+nav{
+    /* Flexbox */
+    display: flex;
+    justify-content: space-between;
+
+    /* Cosmetic */
+    padding:10px;
+    background-color: #1e90ff;
+    color: white;
+}
+
+/* What's On title */
+.navtitle{
+    margin: 15px 150px 0px 0px;
+}
+
+nav h1{
+    font-size: 1rem;
+    margin: 0px 10px 0px 10px;
+}
+
+/* Form Input */
+.searchbar form input{
+    margin-top:10px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0px;
+}
+
+/* Navigation and Sign In Contents */
+nav ul{
+    font-size: 0.75rem;
+    list-style-type: none;
+    display: flex;
+    margin-right: 10px;
+}
+
+nav li, a{
+    margin: 3px 0px 0px 10px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Container */
+.maincontainer{
+    display: grid;
+    margin: 2% 15% 0% 15%;
+    grid-template-columns:60% 40%;
+}
+
+.mainmovie{
+    grid-column: 1;
+}
+
+.moviesidebar{
+    grid-column: 2;
+
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+
+/* Movie button title and description */
+button{
+    font-size: 0.75rem;
+    background-color: #1e90ff;
+    color: white;
+
+    /* Box  */
+    border-radius: 5px;
+    padding: 10px 15px 10px 15px;
+    border: 0px;
+    margin: 20px 10px 10px 0;
+}
+.movie-title{
+    padding-left: 10px;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.movie-desc{
+    padding: 10px;
+    margin-bottom: 50px;
+    font-size: 0.75rem;
+}
+
+
+/* Main Movie 1 */
+.movie1{
+    
+    /* Box */
+    margin: 5px;
+    box-shadow: 2px 2px 2px 2px #ececec;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.movie1 button{
+    align-self: flex-end;
+}
+
+
+/* Movie 2 */
+.movie2{
+    /* Grida */
+    grid-column: 1;
+
+    /* Box */
+    margin: 5px;
+    box-shadow: 2px 2px 2px 2px #ececec;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.movie2 button{
+    align-self: flex-end;
+}
+
+
+/* Movie 3 */
+.movie3{
+    /* Grida */
+    grid-column: 2;
+    /* Box */
+    margin: 5px;
+    box-shadow: 2px 2px 2px 2px #ececec;
+    
+    display: flex;
+    flex-direction: column;
+
+}
+
+.movie3 button{
+    align-self: flex-end;
+}
+
+/* Movie 4 */
+.movie4{
+    /* Grida */
+    grid-column: 1;
+    /* Box */
+    margin: 5px;
+    box-shadow: 2px 2px 2px 2px #ececec;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie4 button{
+    align-self: flex-end;
+}
+
+
+/* Movie 5 */
+.movie5{
+    /* Grida */
+    grid-column: 2;
+    /* Box */
+    margin: 5px;
+    box-shadow: 2px 2px 2px 2px #ececec;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.movie5 button{
+    align-self: flex-end;
+}
+
