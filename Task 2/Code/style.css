@@ -51,8 +51,8 @@ nav li, a{
 /* Main Container */
 .maincontainer{
     display: grid;
-    margin: 2% 15% 0% 15%;
-    grid-template-columns:60% 40%;
+    margin: 2% 13% 0% 13%;
+    grid-template-columns:55% 45%;
 }
 
 .mainmovie{
@@ -64,6 +64,7 @@ nav li, a{
 
     display:grid;
     grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
 }
 
 /* Movie button title and description */
@@ -74,9 +75,9 @@ button{
 
     /* Box  */
     border-radius: 5px;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 10px 10px 10px;
     border: 0px;
-    margin: 20px 10px 10px 0;
+    margin: 20px 10px 10px 0px;
 }
 .movie-title{
     padding-left: 10px;
@@ -86,7 +87,7 @@ button{
 .movie-desc{
     padding: 10px;
     margin-bottom: 50px;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
 }
 
 
@@ -109,7 +110,7 @@ button{
 
 /* Movie 2 */
 .movie2{
-    /* Grida */
+    /* Grid */
     grid-column: 1;
 
     /* Box */
@@ -128,7 +129,7 @@ button{
 
 /* Movie 3 */
 .movie3{
-    /* Grida */
+    /* Grid */
     grid-column: 2;
     /* Box */
     margin: 5px;
@@ -136,7 +137,6 @@ button{
     
     display: flex;
     flex-direction: column;
-
 }
 
 .movie3 button{
@@ -145,7 +145,7 @@ button{
 
 /* Movie 4 */
 .movie4{
-    /* Grida */
+    /* Grid */
     grid-column: 1;
     /* Box */
     margin: 5px;
@@ -161,7 +161,7 @@ button{
 
 /* Movie 5 */
 .movie5{
-    /* Grida */
+    /* Grid */
     grid-column: 2;
     /* Box */
     margin: 5px;

@@ -1,5 +1,12 @@
 @import "centering"; //imported centering elements mixin
 @import "mediaqueries"; //imported mediaqueries mixin
+$hover-color: #444;
+$color1: #4e89ae;
+$color2: #43658b;
+$color3:#ed6663;
+$color4: #ffa372;
+$color5: #8ccff7;
+
 
 //Header
 header{
@@ -8,20 +15,20 @@ header{
     @include img2();
     @include img3();
     //Cosmetic
-    background-color: #8ccff7 ;
+    background-color:  $color5;
     margin-bottom: 50px;
 }
 
 // Footer
 footer{
-    background-color: #8ccff7;
+    background-color: $color5;
     height:50px;
     width:100%;
 }
 
 // Hovering of rows and circles
 .rows:hover, .circle:hover{
-    background-color: #444;
+    background-color: $hover-color;
 }
 
 // Rows
@@ -33,7 +40,7 @@ footer{
 
 //Row elements
 .row1{
-    background-color: #4e89ae;
+    background-color: $color1;
     height: 50px;
     width:100%;
 
@@ -41,20 +48,20 @@ footer{
 
 .row2{
     height: 50px;
-    background-color: #43658b;
+    background-color: $color2;
     width:100%;
 
 }
 
 .row3{
-    background-color: #ed6663;
+    background-color: $color3;
     height: 50px;
     width:100%;
 
 }
 
 .row4{
-    background-color: #ffa372;
+    background-color: $color4;
     height: 50px;
     width:100%;
 
@@ -76,25 +83,25 @@ footer{
 }
 
 .circle1{
-    background-color: #4e89ae;
+    background-color: $color1;
     height: 70px;
     width: 70px;
 }
 
 .circle2{
-    background-color: #43658b;
+    background-color: $color2;
     height: 80px;
     width: 80px;
 }
 
 .circle3{
-    background-color: #ed6663;
+    background-color: $color3;
     height: 90px;
     width: 90px;
 }
 
 .circle4{
-    background-color: #ffa372;
+    background-color: $color4;
     height: 100px;
     width: 100px;
 }
