@@ -43,7 +43,7 @@
     }
 }
 
-//Breakpoints for circles
+//Breakpoints for circles at 621px
 @mixin breakpoint-circles(){
     @media (max-width:621px){
         display: flex;

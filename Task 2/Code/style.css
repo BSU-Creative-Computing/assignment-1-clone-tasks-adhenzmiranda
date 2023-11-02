@@ -1,5 +1,6 @@
 body{
-    font-family: Helvetica, sans-serif
+    font-family: Helvetica, sans-serif;
+    background-color: #eeeeee;
 }
 
 /* Navigation Bar */
@@ -35,6 +36,10 @@ nav h1{
 }
 
 /* Navigation and Sign In Contents */
+.Menu{
+    display:none;
+}
+
 nav ul{
     font-size: 0.75rem;
     list-style-type: none;
@@ -46,6 +51,9 @@ nav li, a{
     margin: 3px 0px 0px 10px;
     color: white;
     text-decoration: none;
+}
+footer{
+    text-align: center;
 }
 
 /* Main Container */
@@ -66,6 +74,7 @@ nav li, a{
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
 }
+
 
 /* Movie button title and description */
 button{
@@ -95,9 +104,10 @@ button{
 .movie1{
     
     /* Box */
+    background-color: #fff;
     margin: 5px;
-    box-shadow: 2px 2px 2px 2px #ececec;
-
+    box-shadow: 2px 2px 2px 2px #dddddd;
+    
     display: flex;
     flex-direction: column;
 
@@ -110,16 +120,18 @@ button{
 
 /* Movie 2 */
 .movie2{
+    
     /* Grid */
     grid-column: 1;
-
+    
     /* Box */
+    background-color: #fff;
     margin: 5px;
-    box-shadow: 2px 2px 2px 2px #ececec;
-
+    box-shadow: 2px 2px 2px 2px #dddddd;
+    
     display: flex;
     flex-direction: column;
-
+    
 }
 
 .movie2 button{
@@ -129,11 +141,13 @@ button{
 
 /* Movie 3 */
 .movie3{
+    
     /* Grid */
     grid-column: 2;
     /* Box */
+    background-color: #fff;
     margin: 5px;
-    box-shadow: 2px 2px 2px 2px #ececec;
+    box-shadow: 2px 2px 2px 2px #dddddd;
     
     display: flex;
     flex-direction: column;
@@ -145,11 +159,13 @@ button{
 
 /* Movie 4 */
 .movie4{
+    
     /* Grid */
     grid-column: 1;
     /* Box */
+    background-color: #fff;
     margin: 5px;
-    box-shadow: 2px 2px 2px 2px #ececec;
+    box-shadow: 2px 2px 2px 2px #dddddd;
     display: flex;
     flex-direction: column;
 }
@@ -161,18 +177,122 @@ button{
 
 /* Movie 5 */
 .movie5{
+    
     /* Grid */
     grid-column: 2;
     /* Box */
+    background-color: #fff;
     margin: 5px;
-    box-shadow: 2px 2px 2px 2px #ececec;
-
+    box-shadow: 2px 2px 2px 2px #dddddd;
+    
     display: flex;
     flex-direction: column;
-
+    
 }
 
 .movie5 button{
     align-self: flex-end;
 }
 
+/* Media Queries (1024+px is default)*/
+/* 1024px to 801px */
+@media  (max-width: 1024px) and (min-width: 801px){
+    .moviesidebar{
+        grid-template-columns: 100%;
+    }
+
+    .movie3{
+        grid-column: 1;
+    }
+
+    .movie5{
+        grid-column: 1;
+    }
+}
+
+/* 800px to 481px */
+@media (max-width: 800px) and (min-width:481px){
+    /* Container */
+    .maincontainer{
+        display: grid;
+        margin: 2% 13% 0% 13%;
+        grid-template-columns:100%;
+    }
+    
+    .mainmovie{
+        grid-column: 1;
+    }
+    
+    .moviesidebar{
+        grid-column: 1;
+    
+        display:grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+    }
+
+    /* Navigation Bar to hide the 4 buttons and search bar and reveal the menu button */
+    .Menu{
+        display: block;
+    }
+
+    .Menu1{
+        display:none;
+    }
+
+    .searchbar form input{
+        display:none;
+        margin-top:10px;
+        height: 30px;
+        border-radius: 5px;
+        border: 0px;
+    }
+}
+
+/* Less 480px */
+@media (max-width:480px){
+    /* Container */
+    .maincontainer{
+        display: grid;
+        margin: 2% 13% 0% 13%;
+        grid-template-columns:100%;
+    }
+    
+    .mainmovie{
+        grid-column: 1;
+    }
+    
+    .moviesidebar{
+        grid-column: 1;
+    
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+    .movie3{
+        grid-column: 1;
+    }
+
+    .movie5{
+        grid-column: 1;
+    }
+
+    /* Hidden Buttons and Search Bar */
+    .Menu{
+        display: block;
+    }
+
+    .Menu1{
+        display:none;
+    }
+
+    .searchbar form input{
+        display:none;
+        margin-top:10px;
+        height: 30px;
+        border-radius: 5px;
+        border: 0px;
+    }
+    
+}
