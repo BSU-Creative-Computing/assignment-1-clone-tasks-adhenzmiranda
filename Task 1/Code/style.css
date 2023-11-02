@@ -1,16 +1,20 @@
+/* Sets a font for the paragraphs */
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/* Padding for logo */
 .logo{
     padding:5px;
 }
 
+/* Set a Grid Template column as default */
 .imgcontainer{
     display:grid;
     grid-template-columns: 33% 33% 33%;
 }
 
+/* Sets the breakpoint at 1024px */
 @media (max-width: 1024px) {
     .imgcontainer{
         display:grid;
@@ -18,22 +22,26 @@ body{
     }
 }
 
+/* Breakpoint at 800px */
 @media (max-width: 800px){
     .imgcontainer{
         grid-template-columns: 50% 50%;
     }
 }
 
+/* Breakpoint at 480px */
 @media (max-width: 480px){
     .imgcontainer{
         grid-template-columns: 100%;
     }
 }
 
+/* Set the size of images at 100% */
 .imgcontainer img{
     width:100%;
 }
 
+/* Paragraphs */
 p{
     line-height: 150%;
 }
@@ -42,6 +50,7 @@ p{
     padding-top: 20px;
 }
 
+/* Footer */
 footer{
     padding:10px;
     background-color: black;
